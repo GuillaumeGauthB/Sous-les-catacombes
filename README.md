@@ -6,8 +6,8 @@ tp de unity 3d avec vahik
 min une salle
 
 //cam qui montre l'objet (animation optionelle)
-cam first person
-cam resident evil
+//cam first person
+//cam resident evil
 
 torches: point light
 main puzzle spot light
@@ -21,3 +21,7 @@ musique d'ambiance (julien got it)
 faire deuxieme niveau (julien) et menu principal (guillaume)
 
 consignes dans menu principale
+
+CREDITS:
+
+Auteur des piques veut etre credited looks like... doit verifier si on doit le faire
