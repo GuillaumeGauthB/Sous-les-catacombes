@@ -22,6 +22,16 @@ faire deuxieme niveau (julien) et menu principal (guillaume)
 
 consignes dans menu principale
 
+//++ Checkpoints
+
+//++Animation de mort
+
+//++Ameliorer la cam fps
+
+++Sons (mort, collection d'items, deposage d'un item, musique de fond, porte qui s'ouvre, etc)
+
+/*ABANDONNER*/++Fix le raycast de la camera principale
+
 CREDITS:
 
 Auteur des piques veut etre credited looks like... doit verifier si on doit le faire
