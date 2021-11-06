@@ -28,9 +28,18 @@ consignes dans menu principale
 
 //++Ameliorer la cam fps
 
-++Sons (mort, collection d'items, deposage d'un item, musique de fond, porte qui s'ouvre, etc)
+//++Fix le raycast de la camera principale
 
-/*ABANDONNER*/++Fix le raycast de la camera principale
+//quand les 3 premiers items sont mis dans le pedestal, la prote de metal jusqu'au 4e niveau s'ouvre
+
+//avec la key du 4e niveau, on peut ouvrir la porte finale
+
+
+POUR TP FINAL
+
+++fix les bugs d'interaction avec le cam 3e perso
+
+++Sons (mort, collection d'items, deposage d'un item, musique de fond, porte qui s'ouvre, etc)
 
 CREDITS:
 
