@@ -8,6 +8,8 @@ TagManager:
   - piege
   - pedestal
   - porteFinale
+  - porteProchainNiveau
+  - plateformeFragile
   layers:
   - Default
   - TransparentFX

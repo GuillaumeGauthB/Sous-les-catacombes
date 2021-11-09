@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class persoPrincipal : MonoBehaviour
 {
@@ -135,14 +136,14 @@ public class persoPrincipal : MonoBehaviour
                 animPerso.SetFloat("vitesseDep", vitesseDepAnim.magnitude);
             animPerso.SetFloat("vitesseY", rigidbodyPerso.velocity.y);
             #endregion
-
+            //print(objetsDansPedestal);
             #region RaycastCollectionDObjets
 
             //Faire un Raycast qui permet de detecter si on regarde un objet activable
             if (Physics.Raycast(raycastFPS.transform.position, raycastFPS.transform.forward, out infoObjets, -distanceActivableLoin) || Physics.SphereCast(transform.position, 3f, -Vector3.up, out infoObjets, 5f))
             {
                 //print(infoObjets.collider.gameObject.tag);
-                if (infoObjets.collider.gameObject.tag == "aPrendre" || infoObjets.collider.gameObject.tag == "pedestal" || infoCollision.collider.gameObject.tag == "porteFinale")
+                if (infoObjets.collider.gameObject.tag == "aPrendre" || infoObjets.collider.gameObject.tag == "pedestal" || infoObjets.collider.gameObject.tag == "porteFinale" || infoObjets.collider.tag == "porteProchainNiveau")
                 {
                     texteActiver.gameObject.SetActive(true);
                 }
@@ -150,7 +151,6 @@ public class persoPrincipal : MonoBehaviour
                 {
                     texteActiver.gameObject.SetActive(false);
                 }
-                print(objetDansMain);
                 //Permettre la collection des items et leur manipulation
                 if (infoObjets.collider.gameObject.tag == "aPrendre" && Input.GetKeyDown(KeyCode.E))
                 {
@@ -180,12 +180,23 @@ public class persoPrincipal : MonoBehaviour
                     {
                         print("Vous tenez déjà un objet");
                     }
-                    
+
                 }
                 else if (infoObjets.collider.gameObject.tag == "pedestal" && Input.GetKeyDown(KeyCode.E) && objetDansMain != "4")
                 {
                     objetCollecter.gameObject.SetActive(false);
                     objetsDansPedestal += objetDansMain;
+                    objetDansMain = "";
+                }
+                else if (infoObjets.collider.tag == "porteProchainNiveau" && Input.GetKeyDown(KeyCode.E))
+                {
+                    SceneManager.LoadScene("finBeta");
+                }
+
+                if (infoObjets.collider.tag == "porteFinale" && objetDansMain == "4" && Input.GetKeyDown(KeyCode.E))
+                {
+                    porteFinale1.GetComponent<Animator>().SetBool("ouvrir", true);
+                    porteFinale2.GetComponent<Animator>().SetBool("ouvrir", true);
                     objetDansMain = "";
                 }
             }
@@ -197,13 +208,10 @@ public class persoPrincipal : MonoBehaviour
             if(objetsDansPedestal.Contains("1") && objetsDansPedestal.Contains("2") && objetsDansPedestal.Contains("3"))
             {
                 grille.GetComponent<Animator>().SetBool("ouvrir", true);
-                if (infoObjets.collider.tag == "porteFinale" && objetDansMain == "4")
-                {
-                    porteFinale1.GetComponent<Animator>().SetBool("ouvrir", true);
-                    porteFinale2.GetComponent<Animator>().SetBool("ouvrir", true);
-                }
+                
             }
             #endregion
+            
         }
         else
         {
@@ -227,6 +235,10 @@ public class persoPrincipal : MonoBehaviour
         {
             posCheckpointActif = other.gameObject.transform.position;
         }
+        /*if (other.gameObject.tag == "plateformeFragile")
+        {
+            other.gameObject.GetComponent<Animator>().SetBool("touche", true);
+        }*/
 
         /*if(other.gameObject.tag == "aPrendre" || other.gameObject.tag == "pedestal")
         {
@@ -244,7 +256,10 @@ public class persoPrincipal : MonoBehaviour
         {
             texteActiver.enabled = false;
         }*/
+
     }
+    
+
 
     void LoadCheckpoint()
     {

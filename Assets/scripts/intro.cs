@@ -25,16 +25,16 @@ public class intro : MonoBehaviour
     {
         if (ouvrirControles && controlesUI.transform.position.x >= 850)
         {
-            controlesUI.transform.position -= new Vector3(10f, 0, 0);
+            controlesUI.transform.position -= new Vector3(50f, 0, 0);
         }
         else if(!ouvrirControles && controlesUI.transform.position.x <= 3000)
         {
-            controlesUI.transform.position += new Vector3(10f, 0, 0);
+            controlesUI.transform.position += new Vector3(50f, 0, 0);
         }
     }
     void CommencerSurClique() 
     {
-        SceneManager.LoadScene("testsPerso");
+        SceneManager.LoadScene("SampleScene");
     }
     void ControlesSurClique()
     {

@@ -47,7 +47,7 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.11</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2020.3.16f1</UnityVersion>
@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\FxaaComponent.cs" />
     <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scripts\LightImprove.cs" />
+    <Compile Include="Assets\scripts\GestionCams.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\ChromaticAberrationComponent.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\BuiltinDebugViewsComponent.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="Assets\BrokenVector\UltimateDungeonPack\Scenes\Demo\FPControls\Scripts\MouseCamLook.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\PostProcessingBehaviour.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\EyeAdaptationModel.cs" />
+    <Compile Include="Assets\scripts\SuiviFluide.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Utils\GraphicsUtils.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Water Shader\Water.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Utilities\CustomMotionTexture\ExampleWheelController.cs" />
@@ -83,6 +85,7 @@
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\BloomComponent.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\MotionBlurModel.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\UserLutComponent.cs" />
+    <Compile Include="Assets\scripts\pivotCamPrincipale.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\UI nvjob\UINvjob.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\AmbientOcclusionModel.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\DitheringComponent.cs" />
@@ -97,21 +100,19 @@
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\DepthOfFieldComponent.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\ColorGradingComponent.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Water Shader\WindZoneRot.cs" />
+    <Compile Include="Assets\scripts\camResidentEvil.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\FogComponent.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\BloomModel.cs" />
     <Compile Include="Assets\Ressources\Water\Water\Scripts\Water.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\DepthOfFieldModel.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Components\AmbientOcclusionComponent.cs" />
+    <Compile Include="Assets\scripts\persoPrincipal.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\AntialiasingModel.cs" />
+    <Compile Include="Assets\scripts\intro.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\Prefabs\Rotation.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\DitheringModel.cs" />
-    <Compile Include="Assets\scripts\SuiviFluide.cs" />
-    <Compile Include="Assets\scripts\intro.cs" />
-    <Compile Include="Assets\scripts\pivotCamPrincipale.cs" />
-    <Compile Include="Assets\scripts\GestionCams.cs" />
-    <Compile Include="Assets\scripts\camResidentEvil.cs" />
-    <Compile Include="Assets\scripts\persoPrincipal.cs" />
+    <Compile Include="Assets\scripts\fin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NVJOB Water Shader SAF\Water Shader\Water Shader Type 2.shader" />
