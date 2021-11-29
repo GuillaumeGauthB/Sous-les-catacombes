@@ -3,38 +3,35 @@ tp de unity 3d avec vahik
 
 // = Complété
 
-min une salle
-
-//cam qui montre l'objet (animation optionelle)
-//cam first person
-//cam resident evil
-
-torches: point light
-main puzzle spot light
-
-//deplacement
-
-PUZZLE: 4 objets a amener pour allumer 4 lumieres pour continuer. 4 couloirs qui amene a l'objet en question. Premier: levier qui bouge desplateformes jusqu'a l'objet. Deuxieme: parkour avec spikes. Troisieme: parkour avec plateformes qui tombent quand tu arrive dessus apres 1s. Quatrieme: mixte de tout, peut seulement etre accedes apres avoir fait les trois autres couloir. Doit avoir poser l'onbjet en main avant de pouvoir en prendre un autre.
-
-musique d'ambiance (julien got it)
-
-faire deuxieme niveau (julien) et menu principal (guillaume)
-
-consignes dans menu principale
-
-//++ Checkpoints
-
-//++Animation de mort
-
-//++Ameliorer la cam fps
-
-//++Fix le raycast de la camera principale
-
-//quand les 3 premiers items sont mis dans le pedestal, la prote de metal jusqu'au 4e niveau s'ouvre
-
-//avec la key du 4e niveau, on peut ouvrir la porte finale
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------- Niveau 1 -------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+- Faire en sorte que la caméra fasse un trajet jusqu'à entreNiveau et s'arrête au menu au lieu de tourner continuellement
+- Baisser la vitesse de base du personnage pour une vitesse de marche et faire courir le personnage en appuyant sur shift
+- Réparer les caméras surveillance et 3e personne
+- faire en sorte que les piques sortent du sol quand on les touche pour montrer que c un piege dangereux
+- ajouter des bruits:
+	- Son de marche/course
+	- Son de saut/aterrissage
+	- Son quand on rammasse la fiole
+	- Son quand on ramasse le pot masson
+	- Son quand on rammasse le crâne
+	- Son quand on dépose le dernier objet sur le piedestale
+	- Son d'ouverture de la porte4
+	- Son quand on rammasse la clé
+	- Son quand on déverouille les grandes portes
+	- Son d'ouverture des grandes portes
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------- Niveau 2 -------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 POUR TP FINAL
 
 ++fix les bugs d'interaction avec le cam 3e perso
