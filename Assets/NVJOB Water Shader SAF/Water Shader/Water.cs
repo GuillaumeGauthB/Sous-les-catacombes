@@ -51,7 +51,7 @@ public class Water : MonoBehaviour
     {
         //---------------------------------
 
-        if (depthTextureModeOn) Camera.main.depthTextureMode = DepthTextureMode.Depth;
+        //if (depthTextureModeOn) Camera.main.depthTextureMode = DepthTextureMode.Depth;
 
         //---------------------------------
     }

@@ -10,6 +10,15 @@ TagManager:
   - porteFinale
   - porteProchainNiveau
   - plateformeFragile
+  - projectiles
+  - zoneRE
+  - plateformBougeante
+  - zoneTourelle
+  - checkpoint
+  - derangeCamera
+  - plateformeTombe
+  - sol
+  - destructible
   layers:
   - Default
   - TransparentFX

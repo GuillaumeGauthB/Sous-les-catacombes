@@ -113,9 +113,17 @@
     <Compile Include="Assets\scripts\intro.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\Prefabs\Rotation.cs" />
     <Compile Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Runtime\Models\DitheringModel.cs" />
+    <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
+    <Compile Include="Assets\KY_effects\Script\Lighting.cs" />
+    <Compile Include="Assets\scripts\ennemiScript.cs" />
+    <Compile Include="Assets\scripts\projectiles.cs" />
+    <Compile Include="Assets\scripts\destructionProjectileEnvironnement.cs" />
+    <Compile Include="Assets\scripts\tourelles.cs" />
+    <Compile Include="Assets\scripts\plateformesTombent.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NVJOB Water Shader SAF\Water Shader\Water Shader Type 2.shader" />
+    <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
     <None Include="Assets\fonts\dear-joe-5-casual\JOEBOB graphics free trial font users license.txt" />
     <None Include="Assets\fonts\worstveld_sling_ext\license.txt" />
     <None Include="Assets\NVJOB Water Shader SAF\Water Shader\Water Shader Type 1.shader" />
