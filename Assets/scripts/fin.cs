@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class fin : MonoBehaviour
 {
-        /* Fonctionnement de la scène finale du jeu
-      Par : Guillaume Gauthier-Benoit
-      Dernière modification : 12/12/2021
-       */
+    /* Fonctionnement de la scène finale du jeu
+  Par : Guillaume Gauthier-Benoit
+  Dernière modification : 12/12/2021
+   */
 
     // Déclaration de la variable
     public Button boutonIntro; // bouton pour revenir à l'intro du jeu
@@ -20,7 +20,12 @@ public class fin : MonoBehaviour
         boutonIntro.GetComponent<Button>().onClick.AddListener(RecommencerSurClique);
     }
 
-   // fonction gérant le bouton pour recommencer
+    private void Update()
+    {
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    // fonction gérant le bouton pour recommencer
     void RecommencerSurClique()
     {
         //Charger la scene d'introduction du jeu

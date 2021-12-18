@@ -19,6 +19,7 @@ TagManager:
   - plateformeTombe
   - sol
   - destructible
+  - porteNiveauFinal (fuck off julien)
   layers:
   - Default
   - TransparentFX

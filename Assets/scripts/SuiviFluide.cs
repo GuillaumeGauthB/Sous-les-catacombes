@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SuiviFluide : MonoBehaviour {
+public class SuiviFluide : MonoBehaviour
+{
     /* Fonctionnement de la scène d'introduction du jeu
      Gestion des fenêtres s'ouvrant quand que les boutons sont appuyés
      Par : Guillaume Gauthier-Benoit
@@ -26,8 +27,8 @@ public class SuiviFluide : MonoBehaviour {
         //Deplacement de camera
         Vector3 PositionFinale = cible.transform.TransformPoint(Distance);
         transform.position = Vector3.Lerp(transform.position, PositionFinale, Amortissement);
-        
-        
+
+
         transform.LookAt(cible.transform.position + AjustementFocus);
     }
 }

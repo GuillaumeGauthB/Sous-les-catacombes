@@ -2494,6 +2494,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1525854849}
     - target: {fileID: 1437925245390313643, guid: 5d1e02553b2f21e459684959e62ec4b6, type: 3}
+      propertyPath: sonMort
+      value: 
+      objectReference: {fileID: 8300000, guid: f40b3a65ed65b864b89a7c9d1fd01d63, type: 3}
+    - target: {fileID: 1437925245390313643, guid: 5d1e02553b2f21e459684959e62ec4b6, type: 3}
       propertyPath: porteFinale1
       value: 
       objectReference: {fileID: 458122530}
@@ -4426,7 +4430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5684549402205321617, guid: 479a29f22b1a1a44fb32d9ae2f2ec23d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5684549402205321617, guid: 479a29f22b1a1a44fb32d9ae2f2ec23d, type: 3}
       propertyPath: m_TagString
@@ -4650,7 +4654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8274082271397511372, guid: 479a29f22b1a1a44fb32d9ae2f2ec23d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8274082271397511372, guid: 479a29f22b1a1a44fb32d9ae2f2ec23d, type: 3}
       propertyPath: m_TagString

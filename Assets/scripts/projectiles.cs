@@ -7,7 +7,7 @@ public class projectiles : MonoBehaviour
     /* Fonctionnement et utilité générale du personnage
    Gestion des projectiles après un certain nombre de temps et lorsqu'ils entrent en collision avec un autre projectile
    Par : Guillaume Gauthier-Benoit
-   Dernière modification : 16/12/2021
+   Dernière modification : 17/12/2021
     */
 
     // Déclaration des variables
@@ -29,14 +29,32 @@ public class projectiles : MonoBehaviour
         // détruire le projectile s'il entre en contact avec d'autres projectiles
         if(other.tag == "projectiles" || other.tag == "derangeCamera")
         {
-            Destruction();
+            GetComponent<AudioSource>().PlayOneShot(destruction);
+            GetComponent<CapsuleCollider>().enabled = false;
+            GetComponent<ParticleSystem>().Stop(true);
+            GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+            Invoke("Destruction", 1.2f);
         }
 
-        // si le personnage tir un objet destructible, le détruire
-        if (other.tag == "destructible" && gameObject.name.Contains("attaquePerso"))
+        // si le personnage tir un objet destructible, le détruire avec les particules d'explosion et arreter le mouvement du projectile, en jouant le son d'explosion, et blesser le boss si le boss est toucher
+        if (other.tag == "destructible" || other.name == "maw_j_laygo")
         {
-            Destroy(other.gameObject);
-            Destruction();
+            if (gameObject.name.Contains("attaque"))
+            {
+                gameObject.GetComponent<CapsuleCollider>().enabled = false;
+                gameObject.GetComponent<ParticleSystem>().Stop(true);
+                gameObject.GetComponent<Rigidbody>().velocity = new Vector3(0, 0, 0);
+                if (other.tag == "destructible")
+                {
+                    other.gameObject.SetActive(false);
+                    other.gameObject.transform.parent.Find("Particle_System").gameObject.SetActive(true);
+                    if (other.name.Contains("Tourelle"))
+                    {
+                        other.gameObject.GetComponentInParent<tourelles>().enabled = false;
+                    }
+                }
+                Invoke("Destruction", 1.2f);
+            }
         }
     }
 
@@ -44,7 +62,6 @@ public class projectiles : MonoBehaviour
     public void Destruction()
     {
         // détruire et faire jouer le son de destruction des projectiles à sa destruction
-        GetComponent<AudioSource>().PlayOneShot(destruction);
         Destroy(gameObject);
     }
 }

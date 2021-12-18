@@ -24,7 +24,7 @@ public class pivotCamPrincipale : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
+    {
         // Gérer les déplacements de la caméra en fonction du raycast
         transform.position = cible.transform.position + new Vector3(0, hauteurPivot, 0);
         transform.Rotate(-Input.GetAxis("Mouse Y"), Input.GetAxis("Mouse X"), 0);
