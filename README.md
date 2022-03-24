@@ -1,43 +1,10 @@
-# unity-tp-3d
-tp de unity 3d avec vahik
+#Sous les catacombes
+Jeu 3D fait par Guillaume Gauthier-Benoit et Julien Poirier-Morin dans le cadre du cours 3J3 d'intrégrations multimédias.
 
-// = Complété
+Ce jeu contient 2 niveaux, durant lesquels il devra faire du parcours pour accéder à des objets lui permettant de s'enfuir tout en devant combattre un boss très dangereux.
 
--------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------- Niveau 1 -------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------
-- Faire en sorte que la caméra fasse un trajet jusqu'à entreNiveau et s'arrête au menu au lieu de tourner continuellement
-- Baisser la vitesse de base du personnage pour une vitesse de marche et faire courir le personnage en appuyant sur shift
-- Réparer les caméras surveillance et 3e personne
-- faire en sorte que les piques sortent du sol quand on les touche pour montrer que c un piege dangereux
-- ajouter des bruits:
-	- Son de marche/course
-	- Son de saut/aterrissage
-	- Son quand on rammasse la fiole
-	- Son quand on ramasse le pot masson
-	- Son quand on rammasse le crâne
-	- Son quand on dépose le dernier objet sur le piedestale
-	- Son d'ouverture de la porte4
-	- Son quand on rammasse la clé
-	- Son quand on déverouille les grandes portes
-	- Son d'ouverture des grandes portes
--------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------- Niveau 2 -------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------
+Lors du premier niveau, le joueur doit récupérer 4 objets dans les différentes salles présentes, dans lesquelles il devra déjouer les différents obstacles dans son chemin, avant de pouvoir accéder au deuxième niveau.
 
+Lors de ce deuxième niveau, le joueur gagne le pouvoir de la magie, qu'il doit utiliser pour vaincre le propriétaire de son château tout en évitant les attaques des tourelles de celui-ci. Une fois ce monstre vaincu, le joueur peut enfin s'enfuir, marquant la fin de notre jeu.
 
-
-
-
--------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------------
-POUR TP FINAL
-
-++fix les bugs d'interaction avec le cam 3e perso
-
-++Sons (mort, collection d'items, deposage d'un item, musique de fond, porte qui s'ouvre, etc)
-
-CREDITS:
-
-Auteur des piques veut etre credited looks like... doit verifier si on doit le faire
+La branche main contient les fichiers de production de notre projet, et la branche build contient un exécutable jouable de note jeu.
