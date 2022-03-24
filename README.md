@@ -1,4 +1,4 @@
-#Sous les catacombes
+# Sous les catacombes
 Jeu 3D fait par Guillaume Gauthier-Benoit et Julien Poirier-Morin dans le cadre du cours 3J3 d'intrégrations multimédias.
 
 Ce jeu contient 2 niveaux, durant lesquels il devra faire du parcours pour accéder à des objets lui permettant de s'enfuir tout en devant combattre un boss très dangereux.
